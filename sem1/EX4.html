@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <!--Implemente um programa que realizará o seguinte cálculo: 𝑚é𝑑𝑖𝑎 = (𝑛𝑜𝑡𝑎1 ∗ 2 + 𝑛𝑜𝑡𝑎2 ∗ 3)/5 Ao final, o programa deve apresentar a média calculada.-->
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Exercicio 4 - Calculo</title>
+</head>
+
+<body>
+    <noscript>Seu navegador não suporta JavaScript ou ele está desabilitado.</noscript>
+
+    <h1>Realiza um calculo de média ponderada</h1>
+
+    <p id="minharesposta"></p>
+
+    <script>
+        var n1 = Number(prompt("Informe o primeiro numero"));
+        var n2 = Number(prompt("Informe o segundo numero"));
+        var media = (n1 * 2 + n2 * 3) / 5
+
+        document.getElementById("minharesposta").innerHTML = media;
+    </script>
+
+</body>
+
+</html>

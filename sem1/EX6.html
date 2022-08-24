@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <!--Crie um programa que irá receber um número qualquer e que, ao final, apresenta o último dígito 
+do número recebido.-->
+
+    <head>
+        <meta charset="UTF-8" />
+        <title>Exercicio 6 - Ultimo dígito</title>
+    </head>
+
+    <body>
+        <noscript>Seu navegador não suporta JavaScript ou ele está desabilitado.</noscript>
+
+        <h1>Programa que informa o ultimo dígito de um número.</h1>
+        
+        <p id="minharesposta"></p>
+
+        <script>
+            var  x = Number(prompt("Informe o numero"));
+            var digito = x % 10;
+            var mensagem = ("O ultimo digito do numero informado é " + digito);
+
+            document.getElementById("minharesposta").innerHTML = mensagem;
+        </script>
+
+    </body>
+
+</html>

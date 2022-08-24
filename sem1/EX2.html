@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<!--Escreva um programa que irá receber dois números, calcula a média aritmética e apresentar o 
+resultado ao final.-->
+<head>
+    <meta charset="UTF-8" />
+    <title>Exercicio 2 - Media</title>
+</head>
+
+<body>
+    <noscript>Seu navegador não suporta JavaScript ou ele está desabilitado.</noscript>
+
+    <h1>Realiza a média aritmética de dois numeros.</h1>
+
+    <p id="minharesposta"></p>
+
+    <script>
+        var a = Number(prompt("Informe o primeiro numero"));
+        var b = Number(prompt("Informe o segundo numero"));
+        var media = (a + b) / 2;
+        document.getElementById("minharesposta").innerHTML = media;
+    </script>
+
+</body>
+
+</html>

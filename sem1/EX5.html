@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<!--Construa um programa que realiza o cálculo da área de um ambiente. O algoritmo deve 
+    receber a largura e a profundidade e apresentar o cálculo da área através da seguinte frase “O 
+    ambiente possui largura de x e profundidade de y, totalizando w metros quadrados”-->
+<head>
+    <meta charset="UTF-8" />
+    <title>Exercicio 5 - Calcula a area de um ambiente</title>
+</head>
+
+<body>
+    <noscript>Seu navegador não suporta JavaScript ou ele está desabilitado.</noscript>
+
+    <h1>Realiza o calculo de área de um embiente</h1>
+
+    <p id="minharesposta"></p>
+
+    <script>
+        var x = Number(prompt("Informe a largura"));
+        var y = Number(prompt("Informe a profundidade"));
+        var w = x * y;
+
+        var mensagem = ("O ambiente possui largura de " + x + " e profundidade de " + y + " totalizando " + w + " metros quadrados");
+
+        document.getElementById("minharesposta").innerHTML = mensagem;
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,29 @@
+<html>
+<!--Construa um programa que receberá 3 números e que, em seguida, calcula a média entre eles. 
+Ao final, escreva o resultado obtido no seguinte formato “A média entre os números a, b e c é r”.-->
+<head>
+    <meta charset="UTF-8" />
+    <title>Exercicio 4 - Média Simples</title>
+</head>
+
+<body>
+    <h1>Calcula Média Simples</h1>
+    N1: <input type="number" id="a" value=""><br />
+    N2: <input type="number" id="b" value=""><br />
+    N3: <input type="number" id="c" value=""><br />
+    <button onclick='calcularMedia()'>Calcular Média</button>
+    <p id="resultado"></p>
+    <script>
+        function calcularMedia() {
+            let a = Number(document.getElementById('a').value);
+            let b = Number(document.getElementById('b').value);
+            let c = Number(document.getElementById('c').value);
+        
+            let media =  (a+b+c)/3
+            let mensagem = ("A média entre os numeros " + a + ", " +b+ " e "+c+" é "+media);
+            document.getElementById('resultado').innerHTML = mensagem;
+        }
+    </script>
+</body>
+
+</html>

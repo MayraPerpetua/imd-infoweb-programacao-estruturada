@@ -1,0 +1,30 @@
+<html>
+<!-- O volume de figuras geométricas pode ser determinado através de funções matemáticas. 
+Construa um programa que receberá os dados necessários e, então, calcula o volume de um 
+prisma de base triangular.
+O Volume de um prisma de base triangular pode ser calculado por 𝑣 = ((𝑎.𝑏)/2)*c -->
+<head>
+    <meta charset="UTF-8" />
+    <title>Exercicio 3 - Volume prisma</title>
+</head>
+
+<body>
+    <h1>Volume de um prisma</h1>
+    N1: <input type="number" id="a" value=""><br />
+    N2: <input type="number" id="b" value=""><br />
+    N3: <input type="number" id="c" value=""><br />
+    <button onclick='calcularVolume()'>Calcular Volume</button>
+    <p id="resultado"></p>
+    <script>
+        function calcularVolume() {
+            let a = Number(document.getElementById('a').value);
+            let b = Number(document.getElementById('b').value);
+            let c = Number(document.getElementById('c').value);
+        
+            let volume =  ((a*b)/2)*c
+            document.getElementById('resultado').innerHTML = volume;
+        }
+    </script>
+</body>
+
+</html>

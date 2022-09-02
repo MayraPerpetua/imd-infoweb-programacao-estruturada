@@ -1,0 +1,30 @@
+<html>
+<!--Construa um programa que contém (e utiliza) uma função que recebe 3 números e retorna a 
+média ponderada 4, 5 e 6 respectivamente. Ao final, apresente o resultado no seguinte formato 
+“A média ponderada (4, 5 e 6) entre os números a, b e c é r”.-->
+<head>
+    <meta charset="UTF-8" />
+    <title>Exercicio 5 - Média Ponderada</title>
+</head>
+
+<body>
+    <h1>Calcula Média Ponderada</h1>
+    N1: <input type="number" id="a" value=""><br />
+    N2: <input type="number" id="b" value=""><br />
+    N3: <input type="number" id="c" value=""><br />
+    <button onclick='calcularMediaPonderada()'>Calcular Média Ponderada</button>
+    <p id="resultado"></p>
+    <script>
+        function calcularMediaPonderada() {
+            let a = Number(document.getElementById('a').value);
+            let b = Number(document.getElementById('b').value);
+            let c = Number(document.getElementById('c').value);
+        
+            let media =  ((a*4)+(b*5)+(c*6))/15
+            let mensagem = ("A média ponderada entre os numeros " + a + ", " + b + " e "+ c +" é "+ media);
+            document.getElementById('resultado').innerHTML = mensagem;
+        }
+    </script>
+</body>
+
+</html>
